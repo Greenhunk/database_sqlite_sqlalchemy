@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <ul>
+      {% for item in books %}
+      <li>{{ item["title"] }}-{{item["author"]}}-{{item["rating"]}}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="">Add New Book</a>
+  </body>
+</html>
